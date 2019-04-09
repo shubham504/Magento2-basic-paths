@@ -6,3 +6,12 @@ magento css:= C:\xampp\htdocs\magentot\pub\static\frontend\Sm\emarket\en_US\css
 
 
 this is the basic path of magento-2
+
+
+
+
+```
+# phtml
+
+<?php echo $this->getLayout() ->createBlock('Magento\Cms\Block\Block') ->setBlockId('your_block_identifier') ->toHtml(); ?>
+```
