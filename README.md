@@ -1,3 +1,10 @@
+
+# Magento
+
+#### Magento2
+```
+
+## Call Blocks 
 # Magento2-basic-paths
 
 magento fevicon:= C:\xampp\htdocs\magentot\update\pub
@@ -9,8 +16,6 @@ this is the basic path of magento-2
 
 
 
-# Call Blocks 
-```
 # .phtml 
 
 <?php echo $this->getLayout() ->createBlock('Magento\Cms\Block\Block') ->setBlockId('your_block_identifier') ->toHtml(); ?>
@@ -29,4 +34,21 @@ this is the basic path of magento-2
         </arguments> 
     </block> 
 </referenceContainer>
+
+
+
+
+<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('banners-home')->toHtml(); 
+?>	
+```
+
+#### Magento1
+```
+## Call Blocks
+
+# .phtml 
+
+<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('banners-home')->toHtml(); 
+?>	
+
 ```
